@@ -15,6 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('role')->default('petani'); // admin, petani, pedagang, umkm
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
+            $table->string('institution')->nullable(); // Poktan, nama toko/usaha
+            $table->decimal('latitude', 10, 7)->nullable();
+            $table->decimal('longitude', 10, 7)->nullable();
+            $table->boolean('is_verified')->default(true);
+            $table->string('avatar')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
