@@ -1,58 +1,288 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">
 
-## About Laravel
+# 🌾 PANENPULIH
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Smart Pre-Harvest Surplus Intelligence & Distribution Platform
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Antisipasi Surplus Panen, Hubungkan Kebutuhan, Selamatkan Hasil Pertanian.**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+[![Laravel](https://img.shields.io/badge/Laravel-13-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)]()
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🌱 Tentang PANENPULIH
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+**PANENPULIH** merupakan platform berbasis web yang dirancang untuk membantu mengidentifikasi potensi kelebihan hasil panen sebelum masa panen tiba.
 
-## Agentic Development
+Sistem ini menghubungkan petani dengan pedagang, UMKM, dan pengolah pangan melalui pengolahan data perkiraan hasil panen, analisis potensi surplus, serta rekomendasi calon pembeli berdasarkan kebutuhan dan lokasi.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Berbeda dari sistem pemasaran hasil pertanian biasa, PANENPULIH berfokus pada **pencegahan surplus sejak sebelum panen**, sehingga hasil pertanian dapat direncanakan penyalurannya lebih awal.
 
-```bash
-composer require laravel/boost --dev
+### 🎯 Tujuan Pengembangan
 
-php artisan boost:install
+- Mengurangi risiko hasil panen tidak terserap pasar.
+- Membantu petani mengidentifikasi potensi surplus lebih awal.
+- Mempermudah akses informasi kebutuhan hasil pertanian.
+- Menghubungkan petani dengan calon pembeli yang sesuai.
+- Memantau jumlah hasil panen yang berhasil disalurkan.
+
+---
+
+## ✨ Fitur Utama
+
+| Fitur | Deskripsi |
+|---|---|
+| 📊 Harvest Planning | Pencatatan perkiraan hasil panen petani. |
+| 📈 Surplus Analysis | Menghitung potensi surplus berdasarkan estimasi panen dan alokasi yang sudah direncanakan. |
+| ⚠️ Surplus Risk Assessment | Mengidentifikasi tingkat risiko surplus berdasarkan beberapa indikator. |
+| 🤝 Smart Buyer Matching | Merekomendasikan calon pembeli berdasarkan komoditas, jumlah, lokasi, dan waktu kebutuhan. |
+| 🛒 Buyer Demand | Memungkinkan pedagang dan UMKM memasukkan kebutuhan komoditas. |
+| 📦 Distribution Tracking | Memantau proses penawaran hingga realisasi penyaluran. |
+| 📍 Location Mapping | Menampilkan informasi lokasi petani dan calon pembeli. |
+| 📉 Impact Dashboard | Menampilkan statistik surplus dan hasil pertanian yang berhasil disalurkan. |
+
+---
+
+## 👥 Role Pengguna
+
+PANENPULIH memiliki tiga jenis pengguna utama dan satu administrator.
+
+### 👨‍🌾 Petani
+- Mengelola profil petani.
+- Memasukkan rencana panen.
+- Melihat hasil analisis surplus.
+- Menerima rekomendasi calon pembeli.
+- Mengelola penawaran hasil panen.
+- Memantau riwayat penyaluran.
+
+### 🏪 Pedagang dan UMKM
+- Mengelola profil pembeli.
+- Memasukkan kebutuhan komoditas.
+- Melihat rekomendasi surplus panen.
+- Mengajukan pembelian.
+- Memantau status pengajuan.
+
+### 🛠️ Administrator
+- Mengelola data pengguna.
+- Memverifikasi akun.
+- Mengelola data komoditas.
+- Memantau aktivitas sistem.
+- Melihat laporan dan statistik penyaluran.
+
+---
+
+## ⚙️ Alur Kerja Sistem
+
+```mermaid
+flowchart TD
+    A[Petani memasukkan rencana panen] --> B[Sistem menghitung potensi surplus]
+    B --> C[Analisis tingkat risiko]
+    C --> D[Rekomendasi calon pembeli]
+
+    E[Pedagang dan UMKM memasukkan kebutuhan] --> D
+
+    D --> F[Pengajuan penawaran]
+    F --> G{Persetujuan petani}
+
+    G -->|Disetujui| H[Kesepakatan penyaluran]
+    G -->|Ditolak| D
+
+    H --> I[Realisasi penyaluran]
+    I --> J[Konfirmasi hasil]
+    J --> K[Dashboard dampak]
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 🧠 Sistem Analisis Surplus
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+PANENPULIH menggunakan perhitungan untuk mengidentifikasi potensi kelebihan hasil panen.
 
-## Code of Conduct
+**Rumus Potensi Surplus:**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+\[
+S = H - P - K
+\]
 
-## Security Vulnerabilities
+Keterangan:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- `S` = Potensi surplus.
+- `H` = Estimasi hasil panen.
+- `P` = Jumlah yang sudah memiliki pembeli.
+- `K` = Jumlah yang dialokasikan untuk kebutuhan lain.
 
-## License
+Sistem juga dirancang menggunakan penilaian risiko berdasarkan persentase surplus, waktu panen, karakteristik komoditas, kapasitas penyimpanan, dan ketersediaan pembeli.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+> Hasil analisis merupakan rekomendasi berdasarkan data yang dimasukkan pengguna, bukan jaminan bahwa seluruh surplus akan terserap.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+| Teknologi | Kegunaan |
+|---|---|
+| PHP 8.3 | Bahasa pemrograman backend |
+| Laravel 13 | Framework pengembangan web |
+| MySQL | Database management |
+| HTML5 | Struktur halaman web |
+| CSS3 | Desain dan tampilan antarmuka |
+| JavaScript | Interaksi halaman |
+| Bootstrap | Framework UI responsif |
+| Leaflet | Peta interaktif |
+| OpenStreetMap | Sumber data peta |
+| Chart.js | Visualisasi data dan statistik |
+
+---
+
+## 📂 Struktur Project
+
+```text
+panenpulih/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   ├── Petani/
+│   │   │   └── Pembeli/
+│   │   └── Middleware/
+│   │
+│   └── Models/
+│
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│       ├── layouts/
+│       ├── auth/
+│       ├── landing/
+│       ├── petani/
+│       ├── pembeli/
+│       └── admin/
+│
+├── routes/
+│   └── web.php
+│
+├── .env.example
+├── artisan
+├── composer.json
+└── README.md
+```
+
+---
+
+## 🚀 Instalasi dan Menjalankan Project
+
+Pastikan perangkat sudah memiliki:
+
+- PHP 8.3 atau versi yang sesuai dengan dependensi Laravel.
+- Composer.
+- MySQL.
+- Laragon atau lingkungan server lokal lainnya.
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/panenpulih.git
+```
+
+### 2. Masuk ke Folder Project
+
+```bash
+cd panenpulih
+```
+
+### 3. Install Dependencies
+
+```bash
+composer install
+```
+
+### 4. Buat File Environment
+
+```bash
+copy .env.example .env
+```
+
+### 5. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 6. Konfigurasi Database
+
+Buat database MySQL bernama:
+
+```text
+db_panenpulih
+```
+
+Sesuaikan konfigurasi `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_panenpulih
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 7. Jalankan Migration
+
+```bash
+php artisan migrate
+```
+
+### 8. Jalankan Development Server
+
+```bash
+php artisan serve
+```
+
+Buka aplikasi melalui:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 🌍 Sustainable Development Goals (SDGs)
+
+PANENPULIH mendukung:
+
+<div align="center">
+
+| SDG 2 | SDG 12 |
+|:---:|:---:|
+| ![SDG 2](https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-02.jpg) | ![SDG 12](https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-12.jpg) |
+| **Zero Hunger** | **Responsible Consumption and Production** |
+
+</div>
+
+Melalui pengelolaan surplus hasil pertanian, PANENPULIH diharapkan dapat mendukung pemanfaatan pangan secara lebih optimal serta mengurangi kehilangan hasil pertanian.
+
+---
+
+## 📌 Project Status
+
+**Development — In Progress**
+
+PANENPULIH saat ini berada dalam tahap pengembangan prototipe. Fitur dan teknologi akan terus disempurnakan berdasarkan kebutuhan pengguna dan hasil pengujian.
+
+---
+
